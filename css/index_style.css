@@ -1,0 +1,111 @@
+@import url(style.css);
+
+/*Hero Section*/
+
+#Hero-Section {
+    position: relative;
+    background-image: url(../media/SonicRunnerSecretQuestionMarkBannerGJTemp.jpg);
+    background-size: cover;
+    background-position: left 90% top 25%;
+    height: 100vh;
+    min-height: 720px;
+    border-bottom: solid 4px #7351ff;
+}
+
+.hero-group {
+    text-align: start;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 5%;
+}
+
+.hero-group img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+    animation: floatIn 1s ease-in-out;
+    pointer-events: none;
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*About Section*/
+#About-Section {
+    padding: 3% 0%;
+    text-align: center;
+    background-image: url(../media/sitebkg.webp);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-margin-top: 50px;
+}
+
+#About-Section h2 {
+    font-family: NewRodinPro-UB;
+    -webkit-text-stroke: 10px #000;
+    paint-order: stroke fill;
+margin-bottom: 16px;
+}
+
+#About-Content .title{
+font-size: 1.5rem;
+font-family: NewRodinPro-UB;
+}
+
+
+#About-Content p {
+    color: white;
+    /*-webkit-text-stroke: 5px #000;
+    paint-order: stroke fill;*/
+    text-shadow: 2px 2px 5px #000;
+    font-family: NewRodinPro-B;
+}
+
+/*download section*/
+#download {
+    scroll-behavior: smooth;
+    padding: 3% 0;
+    background-color: #ff477f;
+    background-image: url(../media/SonicRunnerSecretQuestionMarkBannerGJTemp.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    margin: 0 auto;
+    border-top: solid 4px #fff;
+}
+
+#download-wrapper {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+}
+
+#download-wrapper h3 {
+    font-family: siteHeading;
+    color: white;
+    -webkit-text-stroke: 5px #000;
+    paint-order: stroke fill;
+}
+
+#download-wrapper p {
+    color: white;
+    font-family: NewRodinPro-B;
+    -webkit-text-stroke: 4px #000;
+    paint-order: stroke fill;
+}
